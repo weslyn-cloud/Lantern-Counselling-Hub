@@ -206,9 +206,8 @@ const App: React.FC = () => {
           <p className="text-center text-xs font-bold tracking-[0.3em] text-stone-400 uppercase mb-8">Trusted & Recognised By</p>
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-40 grayscale">
             <span className="font-serif text-2xl font-bold italic">Psychology Today</span>
-            <span className="font-serif text-2xl font-bold">VOGUE</span>
-            <span className="font-serif text-2xl font-bold italic">The Gottman Institute</span>
-            <span className="font-serif text-2xl font-bold">Self</span>
+            <span className="font-serif text-2xl font-bold">PACFA</span>
+            <span className="font-serif text-2xl font-bold">CCAA</span>
           </div>
         </div>
       </section>
