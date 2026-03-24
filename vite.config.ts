@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      base: '/Lantern-Counselling-Hub/', // Fixes the blank page issue
+      base: '/Lantern-Counselling-Hub/',
       server: {
         port: 3000,
         host: '0.0.0.0',
