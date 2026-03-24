@@ -4,7 +4,7 @@ import {
   Menu, X, ArrowRight, Heart, Sparkles, 
   ShieldCheck, MessageCircle, Calendar, 
   Instagram, Facebook, Linkedin, Mail, Phone, MapPin,
-  ChevronRight, Quote, Flame as Lantern
+  ChevronRight, Quote
 } from 'lucide-react';
 
 // --- Components ---
@@ -31,9 +31,7 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'bg-white/90 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center gap-2 group cursor-pointer">
-          <div className="w-10 h-10 bg-lantern-amber rounded-full flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
-            <Lantern size={24} />
-          </div>
+          <img src="https://ais-dev-ktmhgruuhxhehnry7equcy-660414670275.asia-southeast1.run.app/logo.png" alt="Lantern Logo" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform" referrerPolicy="no-referrer" />
           <span className="font-serif text-2xl font-semibold tracking-tight text-lantern-dark">
             Lantern <span className="font-light italic">Counselling</span>
           </span>
@@ -154,13 +152,13 @@ const App: React.FC = () => {
               transition={{ duration: 0.8 }}
             >
               <span className="inline-block px-4 py-1.5 bg-lantern-sage/10 text-lantern-sage text-xs font-bold tracking-[0.2em] uppercase rounded-full mb-6 border border-lantern-sage/20">
-                Couples & Individual Therapy in Seattle
+                Specialized Couples & Relationship Therapy in Brisbane
               </span>
               <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-lantern-dark leading-[0.9] mb-8">
                 Lighting the path to <span className="font-serif-italic text-lantern-amber">deeper connection.</span>
               </h1>
               <p className="text-xl md:text-2xl text-stone-600 font-light leading-relaxed mb-10 max-w-2xl">
-                We help modern couples and individuals navigate the complexities of relationships, anxiety, and life transitions with warmth and evidence-based care.
+                We help modern couples navigate the complexities of partnership, conflict, and intimacy with warmth and evidence-based care.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-lantern-dark text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-lantern-sage transition-all shadow-xl hover:-translate-y-1">
@@ -209,7 +207,7 @@ const App: React.FC = () => {
             >
               <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=1000" 
+                  src="/therapist.png" 
                   alt="Therapist smiling" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -227,10 +225,10 @@ const App: React.FC = () => {
               </h2>
               <div className="space-y-6 text-lg text-stone-600 leading-relaxed">
                 <p>
-                  At Lantern Counselling Hub, we believe that therapy shouldn't feel clinical or cold. It should feel like a warm, safe space where you can finally put down the heavy things you've been carrying.
+                  At Lantern Counselling Hub, we believe that relationship therapy shouldn't feel clinical or cold. It should feel like a warm, safe space where you and your partner can finally put down the heavy things you've been carrying together.
                 </p>
                 <p>
-                  Whether you're navigating the early stages of a relationship, dealing with years of built-up resentment, or simply feeling lost in your own life, we're here to hold the lantern and help you find your way back to connection.
+                  Whether you're navigating the early stages of a relationship, dealing with years of built-up resentment, or facing a crisis of trust, we're here to hold the lantern and help you find your way back to each other.
                 </p>
                 <ul className="space-y-4 pt-4">
                   {[
@@ -270,14 +268,14 @@ const App: React.FC = () => {
             />
             <ServiceCard 
               icon={Sparkles}
-              title="Individual Therapy"
-              description="Explore your inner world, heal from the past, and build a life that feels authentic and fulfilling."
+              title="Infidelity Recovery"
+              description="Heal from the trauma of betrayal and navigate the complex journey of rebuilding trust and transparency."
               delay={0.2}
             />
             <ServiceCard 
               icon={ShieldCheck}
-              title="Anxiety & Stress"
-              description="Learn practical tools to quiet the noise and find a sense of calm in an increasingly chaotic world."
+              title="High Conflict"
+              description="De-escalate the cycle of criticism and defensiveness to create a more peaceful home environment."
               delay={0.3}
             />
             <ServiceCard 
@@ -294,8 +292,8 @@ const App: React.FC = () => {
             />
             <ServiceCard 
               icon={MapPin}
-              title="Life Transitions"
-              description="Navigate career changes, moves, or new parenthood with grace and resilience."
+              title="Discernment Counseling"
+              description="A specialized approach for couples where one is leaning out and the other is leaning in."
               delay={0.6}
             />
           </div>
@@ -374,7 +372,7 @@ const App: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
             <div className="max-w-2xl">
               <h2 className="font-serif text-4xl md:text-6xl text-lantern-dark mb-6">Stories of <span className="font-serif-italic text-lantern-amber">healing.</span></h2>
-              <p className="text-xl text-stone-500 font-light">Hear from the couples and individuals who have found their way with us.</p>
+              <p className="text-xl text-stone-500 font-light">Hear from the couples who have found their way back to each other with us.</p>
             </div>
             <button className="flex items-center gap-2 font-bold text-lantern-dark hover:text-lantern-amber transition-colors">
               Read More Reviews <ChevronRight size={20} />
@@ -388,9 +386,9 @@ const App: React.FC = () => {
               role="Couples Therapy Clients"
             />
             <TestimonialCard 
-              quote="I've seen many therapists over the years, but this is the first time I've felt truly understood and challenged in the best way possible. I feel more like myself than ever."
-              author="James R."
-              role="Individual Therapy Client"
+              quote="After years of the same arguments, we finally have the tools to talk without fighting. It's like we've rediscovered the person we first fell in love with."
+              author="David & Chloe"
+              role="Couples Therapy Clients"
             />
           </div>
         </div>
@@ -446,9 +444,9 @@ const App: React.FC = () => {
 
           <div className="max-w-4xl mx-auto space-y-4">
             {[
-              { q: "How long are the sessions?", a: "Standard individual and couples sessions are 50 minutes. We also offer extended 80-minute sessions for couples who want to dive deeper." },
+              { q: "How long are the sessions?", a: "Standard couples sessions are 50 minutes. We also offer extended 80-minute sessions for couples who want to dive deeper into complex issues." },
               { q: "Do you take insurance?", a: "We are an out-of-network provider. We can provide you with a 'superbill' that you can submit to your insurance for potential reimbursement." },
-              { q: "How often should we come in?", a: "Most clients start with weekly sessions to build momentum. As things improve, we often transition to bi-weekly or monthly 'check-ins'." },
+              { q: "How often should we come in?", a: "Most couples start with weekly sessions to build momentum and learn new tools. As things improve, we often transition to bi-weekly check-ins." },
               { q: "What is the Gottman Method?", a: "It's an evidence-based approach to couples therapy based on 40 years of research. It focuses on building friendship, managing conflict, and creating shared meaning." }
             ].map((item, i) => (
               <details key={i} className="group bg-white rounded-3xl border border-stone-100 overflow-hidden transition-all">
@@ -473,7 +471,7 @@ const App: React.FC = () => {
           <div className="bg-lantern-sage rounded-[4rem] p-12 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
             <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
             <div className="relative z-10 max-w-3xl mx-auto">
-              <Lantern className="w-16 h-16 mx-auto mb-8 text-lantern-amber" />
+              <img src="https://ais-dev-ktmhgruuhxhehnry7equcy-660414670275.asia-southeast1.run.app/logo.png" alt="Lantern Logo" className="w-24 h-24 mx-auto mb-8 brightness-0 invert" referrerPolicy="no-referrer" />
               <h2 className="font-serif text-4xl md:text-7xl mb-8">Ready to start your <span className="font-serif-italic">journey?</span></h2>
               <p className="text-xl md:text-2xl mb-12 text-white/80 font-light">
                 The first step is often the hardest, but you don't have to take it alone. Book a free 15-minute consultation to see if we're the right fit for you.
@@ -497,13 +495,11 @@ const App: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
             <div className="lg:col-span-1">
               <div className="flex items-center gap-2 mb-8">
-                <div className="w-8 h-8 bg-lantern-amber rounded-full flex items-center justify-center text-white">
-                  <Lantern size={18} />
-                </div>
+                <img src="https://ais-dev-ktmhgruuhxhehnry7equcy-660414670275.asia-southeast1.run.app/logo.png" alt="Lantern Logo" className="w-8 h-8 object-contain" referrerPolicy="no-referrer" />
                 <span className="font-serif text-xl font-bold text-lantern-dark">Lantern Counselling</span>
               </div>
               <p className="text-stone-500 leading-relaxed mb-8">
-                Compassionate, evidence-based therapy for modern couples and individuals. Lighting the way to deeper connection and inner peace.
+                Compassionate, evidence-based therapy for modern couples. Lighting the way to deeper connection and lasting partnership.
               </p>
               <div className="flex gap-4">
                 <a href="#" className="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-lantern-amber hover:text-white transition-all"><Instagram size={20} /></a>
@@ -527,8 +523,8 @@ const App: React.FC = () => {
               <h4 className="font-bold text-lantern-dark mb-8 uppercase tracking-widest text-sm">Contact</h4>
               <ul className="space-y-4 text-stone-500">
                 <li className="flex items-center gap-3"><Mail size={18} className="text-lantern-amber" /> hello@lanterncounselling.com</li>
-                <li className="flex items-center gap-3"><Phone size={18} className="text-lantern-amber" /> (206) 555-0123</li>
-                <li className="flex items-center gap-3"><MapPin size={18} className="text-lantern-amber" /> 123 Healing Way, Seattle, WA</li>
+                <li className="flex items-center gap-3"><Phone size={18} className="text-lantern-amber" /> (07) 3555 0123</li>
+                <li className="flex items-center gap-3"><MapPin size={18} className="text-lantern-amber" /> 123 Healing Way, Brisbane, QLD</li>
               </ul>
             </div>
 
