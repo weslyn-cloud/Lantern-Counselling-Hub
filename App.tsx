@@ -1,90 +1,3 @@
-// ... keep all imports at the top (motion, lucide-react, etc.)
-
-const App: React.FC = () => {
-  return (
-    <div className="font-sans selection:bg-lantern-amber selection:text-white">
-      <Navbar />
-
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1516589174184-c685266d430c?auto=format&fit=crop&q=80&w=2000" 
-            alt="Warm living space" 
-            className="w-full h-full object-cover opacity-20"
-            referrerPolicy="no-referrer"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-lantern-cream via-transparent to-lantern-cream"></div>
-        </div>
-
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <span className="inline-block px-4 py-1.5 bg-lantern-sage/10 text-lantern-sage text-xs font-bold tracking-[0.2em] uppercase rounded-full mb-6 border border-lantern-sage/20">
-                Couples & Individual Therapy in Springwood, QLD
-              </span>
-              <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-lantern-dark leading-[0.9] mb-8">
-                Lighting the path to <span className="font-serif-italic text-lantern-amber">deeper connection.</span>
-              </h1>
-              {/* ... keep paragraphs and buttons as they were */}
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* ... keep Services and Approach sections as they were */}
-
-      {/* Footer - Updated with your details */}
-      <footer className="bg-white pt-24 pb-12 border-t border-stone-100">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
-            <div className="lg:col-span-1">
-              <div className="flex items-center gap-2 mb-8">
-                <div className="w-8 h-8 bg-lantern-amber rounded-full flex items-center justify-center text-white">
-                  <Lantern size={18} />
-                </div>
-                <span className="font-serif text-xl font-bold text-lantern-dark">Lantern Counselling Hub</span>
-              </div>
-              <p className="text-stone-500 leading-relaxed mb-8">
-                Compassionate, evidence-based therapy for modern couples and individuals. Lighting the way to deeper connection and inner peace.
-              </p>
-              {/* ... keep Social links */}
-            </div>
-
-            {/* ... keep Quick Links column */}
-
-            <div>
-              <h4 className="font-bold text-lantern-dark mb-8 uppercase tracking-widest text-sm">Contact</h4>
-              <ul className="space-y-4 text-stone-500">
-                <li className="flex items-center gap-3"><Mail size={18} className="text-lantern-amber" /> hello@lanterncounsellinghub.com.au</li>
-                <li className="flex items-center gap-3"><Phone size={18} className="text-lantern-amber" /> +61 4XX XXX XXX</li>
-                <li className="flex items-start gap-3">
-                  <MapPin size={18} className="text-lantern-amber mt-1 flex-shrink-0" /> 
-                  <span>14/3460 Pacific Highway,<br/>Springwood, QLD 4127</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* ... keep Newsletter column */}
-          </div>
-
-          <div className="pt-12 border-t border-stone-100 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-stone-400">
-            <p>© 2026 Lantern Counselling Hub. All rights reserved.</p>
-            {/* ... keep legal links */}
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-};
-
-export default App;
-
-
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
@@ -294,8 +207,8 @@ const App: React.FC = () => {
             >
               <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl">
                 <img 
-                  src="/therapist.png" 
-                  alt="Therapist smiling" 
+                  src="https://assets.cdn.filesafe.space/AznyZ901C1eWpNIsXx1D/media/69968e56adc9e9bd1625bce5.png" 
+                  alt="Lead Counsellor at Lantern Counselling Hub" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
