@@ -30,11 +30,13 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'bg-white/90 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <div className="flex items-center gap-2 group cursor-pointer">
-          <img src="https://ais-dev-ktmhgruuhxhehnry7equcy-660414670275.asia-southeast1.run.app/logo.png" alt="Lantern Logo" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform" referrerPolicy="no-referrer" />
-          <span className="font-serif text-2xl font-semibold tracking-tight text-lantern-dark">
-            Lantern <span className="font-light italic">Counselling</span>
-          </span>
+        <div className="flex items-center group cursor-pointer">
+          <img 
+            src="https://assets.cdn.filesafe.space/AznyZ901C1eWpNIsXx1D/media/68147f4788cf5c1dfdf2cf34.png" 
+            alt="Lantern Counselling Hub Logo" 
+            className="h-12 w-auto object-contain group-hover:scale-105 transition-transform" 
+            referrerPolicy="no-referrer" 
+          />
         </div>
 
         {/* Desktop Nav */}
@@ -494,9 +496,13 @@ const App: React.FC = () => {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
             <div className="lg:col-span-1">
-              <div className="flex items-center gap-2 mb-8">
-                <img src="https://ais-dev-ktmhgruuhxhehnry7equcy-660414670275.asia-southeast1.run.app/logo.png" alt="Lantern Logo" className="w-8 h-8 object-contain" referrerPolicy="no-referrer" />
-                <span className="font-serif text-xl font-bold text-lantern-dark">Lantern Counselling</span>
+              <div className="mb-8">
+                <img 
+                  src="https://assets.cdn.filesafe.space/AznyZ901C1eWpNIsXx1D/media/68147f4788cf5c1dfdf2cf34.png" 
+                  alt="Lantern Counselling Hub Logo" 
+                  className="h-12 w-auto object-contain" 
+                  referrerPolicy="no-referrer" 
+                />
               </div>
               <p className="text-stone-500 leading-relaxed mb-8">
                 Compassionate, evidence-based therapy for modern couples. Lighting the way to deeper connection and lasting partnership.
