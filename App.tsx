@@ -24,7 +24,7 @@ const Navbar = () => {
     { name: 'About', href: '#about' },
     { name: 'Approach', href: '#approach' },
     { name: 'FAQ', href: '#faq' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Contact', href: 'mailto:office@lanterncounselling.com.au' },
   ];
 
   return (
@@ -50,9 +50,14 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <button className="bg-lantern-dark text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-lantern-sage transition-all shadow-md hover:shadow-lg active:scale-95">
+          <a 
+            href="https://lanterncounselling.com.au/booking-couple"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-lantern-dark text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-lantern-sage transition-all shadow-md hover:shadow-lg active:scale-95 inline-block"
+          >
             Book a Session
-          </button>
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -80,9 +85,15 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <button className="bg-lantern-amber text-white py-4 rounded-xl font-bold shadow-lg">
+            <a 
+              href="https://lanterncounselling.com.au/booking-couple"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-lantern-amber text-white py-4 rounded-xl font-bold shadow-lg text-center block"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Book a Session
-            </button>
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
@@ -154,7 +165,7 @@ const App: React.FC = () => {
               transition={{ duration: 0.8 }}
             >
               <span className="inline-block px-4 py-1.5 bg-lantern-sage/10 text-lantern-sage text-xs font-bold tracking-[0.2em] uppercase rounded-full mb-6 border border-lantern-sage/20">
-                Specialized Couples & Relationship Therapy in Brisbane
+                Specialised Couples & Relationship Therapy in Brisbane
               </span>
               <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-lantern-dark leading-[0.9] mb-8">
                 Lighting the path to <span className="font-serif-italic text-lantern-amber">deeper connection.</span>
@@ -163,9 +174,14 @@ const App: React.FC = () => {
                 We help modern couples navigate the complexities of partnership, conflict, and intimacy with warmth and evidence-based care.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-lantern-dark text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-lantern-sage transition-all shadow-xl hover:-translate-y-1">
+                <a 
+                  href="https://lanterncounselling.com.au/booking-couple"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-lantern-dark text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-lantern-sage transition-all shadow-xl hover:-translate-y-1 text-center"
+                >
                   Book Your Free Consultation
-                </button>
+                </a>
                 <button className="bg-white text-lantern-dark border border-stone-200 px-10 py-5 rounded-full text-lg font-bold hover:bg-stone-50 transition-all">
                   Our Services
                 </button>
@@ -187,7 +203,7 @@ const App: React.FC = () => {
       {/* As Seen In */}
       <section className="py-12 border-y border-stone-100 bg-white">
         <div className="container mx-auto px-6">
-          <p className="text-center text-xs font-bold tracking-[0.3em] text-stone-400 uppercase mb-8">Trusted & Recognized By</p>
+          <p className="text-center text-xs font-bold tracking-[0.3em] text-stone-400 uppercase mb-8">Trusted & Recognised By</p>
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-40 grayscale">
             <span className="font-serif text-2xl font-bold italic">Psychology Today</span>
             <span className="font-serif text-2xl font-bold">VOGUE</span>
@@ -237,7 +253,7 @@ const App: React.FC = () => {
                     "Evidence-based Gottman Method approach",
                     "Trauma-informed, inclusive care",
                     "Convenient online & in-person sessions",
-                    "Specialized in modern relationship dynamics"
+                    "Specialised in modern relationship dynamics"
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3">
                       <div className="w-6 h-6 bg-lantern-sage/10 rounded-full flex items-center justify-center text-lantern-sage">
@@ -294,8 +310,8 @@ const App: React.FC = () => {
             />
             <ServiceCard 
               icon={MapPin}
-              title="Discernment Counseling"
-              description="A specialized approach for couples where one is leaning out and the other is leaning in."
+              title="Discernment Counselling"
+              description="A specialised approach for couples where one is leaning out and the other is leaning in."
               delay={0.6}
             />
           </div>
@@ -402,17 +418,17 @@ const App: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="order-2 lg:order-1">
               <span className="text-lantern-sage font-bold tracking-widest uppercase text-sm mb-6 block">Our Founder</span>
-              <h2 className="font-serif text-4xl md:text-6xl text-lantern-dark mb-8">Meet <span className="font-serif-italic text-lantern-amber">Dr. Elena Vance</span></h2>
+              <h2 className="font-serif text-4xl md:text-6xl text-lantern-dark mb-8">Meet <span className="font-serif-italic text-lantern-amber">Weslyn</span></h2>
               <div className="space-y-6 text-lg text-stone-600 leading-relaxed">
                 <p>
-                  With over 15 years of experience in clinical psychology and a deep specialization in the Gottman Method, Dr. Vance founded Lantern Counselling Hub to bridge the gap between clinical excellence and human warmth.
+                  Weslyn is the Founder and Lead Counsellor at Lantern Counselling Hub, dedicated to helping couples navigate the complexities of their relationships with empathy and professional expertise. He holds a Master of Counselling degree from Christian Heritage College (CHC) Australia, which provides the clinical foundation for his compassionate approach.
                 </p>
                 <p>
-                  "I believe that every couple has the capacity for deep connection, even when it feels like the light has gone out. My job is to hold the lantern while we find the way back together."
+                  His therapeutic approach is centred on "The Harmony of Healing," where he integrates evidence-based techniques with a deep understanding of human connection. Weslyn specialises in creating a safe, non-judgemental space for couples to explore their challenges, rediscover their strengths, and build a lasting partnership.
                 </p>
                 <div className="pt-6">
                   <button className="flex items-center gap-3 font-bold text-lantern-dark group">
-                    <span className="pb-1 border-b-2 border-lantern-amber group-hover:border-lantern-dark transition-all">Read Elena's Full Story</span>
+                    <span className="pb-1 border-b-2 border-lantern-amber group-hover:border-lantern-dark transition-all">Read Weslyn's Full Story</span>
                     <ArrowRight size={20} className="text-lantern-amber group-hover:translate-x-2 transition-transform" />
                   </button>
                 </div>
@@ -421,15 +437,15 @@ const App: React.FC = () => {
             <div className="order-1 lg:order-2 relative">
               <div className="aspect-[3/4] rounded-[4rem] overflow-hidden shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1000" 
-                  alt="Dr. Elena Vance" 
+                  src="https://assets.cdn.filesafe.space/AznyZ901C1eWpNIsXx1D/media/69968e56adc9e9bd1625bce5.png" 
+                  alt="Weslyn" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-stone-100">
-                <p className="font-serif text-lg font-bold text-lantern-dark">Dr. Elena Vance, PhD</p>
-                <p className="text-sm text-stone-500">Clinical Director & Founder</p>
+                <p className="font-serif text-lg font-bold text-lantern-dark">Weslyn</p>
+                <p className="text-sm text-stone-500">Lead Counsellor & Founder</p>
               </div>
             </div>
           </div>
@@ -473,18 +489,26 @@ const App: React.FC = () => {
           <div className="bg-lantern-sage rounded-[4rem] p-12 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
             <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
             <div className="relative z-10 max-w-3xl mx-auto">
-              <img src="https://ais-dev-ktmhgruuhxhehnry7equcy-660414670275.asia-southeast1.run.app/logo.png" alt="Lantern Logo" className="w-24 h-24 mx-auto mb-8 brightness-0 invert" referrerPolicy="no-referrer" />
+              <img src="https://assets.cdn.filesafe.space/AznyZ901C1eWpNIsXx1D/media/68147f4788cf5c1dfdf2cf34.png" alt="Lantern Logo" className="w-24 h-24 mx-auto mb-8 brightness-0 invert" referrerPolicy="no-referrer" />
               <h2 className="font-serif text-4xl md:text-7xl mb-8">Ready to start your <span className="font-serif-italic">journey?</span></h2>
               <p className="text-xl md:text-2xl mb-12 text-white/80 font-light">
                 The first step is often the hardest, but you don't have to take it alone. Book a free 15-minute consultation to see if we're the right fit for you.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-6">
-                <button className="bg-white text-lantern-sage px-10 py-5 rounded-full text-xl font-bold hover:bg-lantern-cream transition-all shadow-xl">
+                <a 
+                  href="https://lanterncounselling.com.au/booking-couple"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white text-lantern-sage px-10 py-5 rounded-full text-xl font-bold hover:bg-lantern-cream transition-all shadow-xl"
+                >
                   Schedule Your Consultation
-                </button>
-                <button className="bg-transparent border-2 border-white/30 text-white px-10 py-5 rounded-full text-xl font-bold hover:bg-white/10 transition-all">
+                </a>
+                <a 
+                  href="mailto:office@lanterncounselling.com.au"
+                  className="bg-transparent border-2 border-white/30 text-white px-10 py-5 rounded-full text-xl font-bold hover:bg-white/10 transition-all"
+                >
                   Contact Us
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -492,71 +516,9 @@ const App: React.FC = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-white pt-24 pb-12 border-t border-stone-100">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
-            <div className="lg:col-span-1">
-              <div className="mb-8">
-                <img 
-                  src="https://assets.cdn.filesafe.space/AznyZ901C1eWpNIsXx1D/media/68147f4788cf5c1dfdf2cf34.png" 
-                  alt="Lantern Counselling Hub Logo" 
-                  className="h-12 w-auto object-contain" 
-                  referrerPolicy="no-referrer" 
-                />
-              </div>
-              <p className="text-stone-500 leading-relaxed mb-8">
-                Compassionate, evidence-based therapy for modern couples. Lighting the way to deeper connection and lasting partnership.
-              </p>
-              <div className="flex gap-4">
-                <a href="#" className="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-lantern-amber hover:text-white transition-all"><Instagram size={20} /></a>
-                <a href="#" className="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-lantern-amber hover:text-white transition-all"><Facebook size={20} /></a>
-                <a href="#" className="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-lantern-amber hover:text-white transition-all"><Linkedin size={20} /></a>
-              </div>
-            </div>
-
-            <div>
-              <h4 className="font-bold text-lantern-dark mb-8 uppercase tracking-widest text-sm">Quick Links</h4>
-              <ul className="space-y-4 text-stone-500">
-                <li><a href="#services" className="hover:text-lantern-amber transition-colors">Services</a></li>
-                <li><a href="#about" className="hover:text-lantern-amber transition-colors">About Us</a></li>
-                <li><a href="#approach" className="hover:text-lantern-amber transition-colors">Our Approach</a></li>
-                <li><a href="#" className="hover:text-lantern-amber transition-colors">Blog</a></li>
-                <li><a href="#" className="hover:text-lantern-amber transition-colors">Careers</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold text-lantern-dark mb-8 uppercase tracking-widest text-sm">Contact</h4>
-              <ul className="space-y-4 text-stone-500">
-                <li className="flex items-center gap-3"><Mail size={18} className="text-lantern-amber" /> hello@lanterncounselling.com</li>
-                <li className="flex items-center gap-3"><Phone size={18} className="text-lantern-amber" /> (07) 3555 0123</li>
-                <li className="flex items-center gap-3"><MapPin size={18} className="text-lantern-amber" /> 123 Healing Way, Brisbane, QLD</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold text-lantern-dark mb-8 uppercase tracking-widest text-sm">Newsletter</h4>
-              <p className="text-stone-500 mb-6">Get relationship tips and mental health insights delivered to your inbox.</p>
-              <div className="relative">
-                <input 
-                  type="email" 
-                  placeholder="Your email" 
-                  className="w-full bg-stone-100 border-none rounded-full py-4 px-6 focus:ring-2 focus:ring-lantern-amber transition-all"
-                />
-                <button className="absolute right-2 top-2 bg-lantern-dark text-white p-2 rounded-full hover:bg-lantern-sage transition-all">
-                  <ArrowRight size={20} />
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className="pt-12 border-t border-stone-100 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-stone-400">
-            <p>© 2024 Lantern Counselling Hub. All rights reserved.</p>
-            <div className="flex gap-8">
-              <a href="#" className="hover:text-lantern-amber transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-lantern-amber transition-colors">Terms of Service</a>
-            </div>
-          </div>
+      <footer className="bg-white py-12 border-t border-stone-100">
+        <div className="container mx-auto px-6 text-center">
+          <p className="text-sm text-stone-400">© 2024 Lantern Counselling Hub. All rights reserved.</p>
         </div>
       </footer>
     </div>
