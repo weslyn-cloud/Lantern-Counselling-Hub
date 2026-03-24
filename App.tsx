@@ -233,10 +233,6 @@ const App: React.FC = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className="absolute -bottom-10 -right-10 bg-lantern-amber p-10 rounded-[2rem] text-white shadow-2xl max-w-xs hidden md:block">
-                <Sparkles className="mb-4" />
-                <p className="font-serif text-xl italic">"The quality of our relationships determines the quality of our lives."</p>
-              </div>
             </motion.div>
 
             <div>
