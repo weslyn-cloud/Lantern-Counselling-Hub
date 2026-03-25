@@ -247,7 +247,7 @@ const App: React.FC = () => {
                 </p>
                 <ul className="space-y-4 pt-4">
                   {[
-                    "Evidence-based Gottman Method approach",
+                    "Evidence-based approach",
                     "Trauma-informed, inclusive care",
                     "Convenient online & in-person sessions",
                     "Specialised in modern relationship dynamics"
